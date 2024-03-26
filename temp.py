@@ -1,5 +1,4 @@
 
-
 import PySimpleGUI as sg
 
 # Define the layout

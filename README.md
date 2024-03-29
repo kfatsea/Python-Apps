@@ -9,7 +9,7 @@
 ![Converter](/Media/Converter.png)
 ## Calculator
 - Brief Description
-![[Pasted image 20240327130808.png|150x200]]
+![Calculator](/Media/Calculator.png)
 ## Stopwatch
 - Brief Description
-![[Pasted image 20240329155939.png]]
+![Stopwatch](/Media/Stopwatch.png)

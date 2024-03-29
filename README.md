@@ -5,11 +5,20 @@
 - References
 
 ## Converter
-- Brief description 
+#### Brief description
+Simple Python converter that converts:
+- kg to pounds
+- km to miles
+- sec to 
+##### Preview
 ![Converter](/Media/Converter.png)
 ## Calculator
-- Brief Description
+#### Brief Description
+Enter Description
+##### Preview
 ![Calculator](/Media/Calculator.png)
 ## Stopwatch
-- Brief Description
+#### Brief Description
+Enter Description
+##### Preview
 ![Stopwatch](/Media/Stopwatch.png)

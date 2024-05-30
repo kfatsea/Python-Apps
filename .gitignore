@@ -1,1 +1,5 @@
+# Ignore temp.py - removed from remote repository
 temp.py
+
+# Ignore the Text-Editor's changelog
+Text-editor\CHANGELOG.md

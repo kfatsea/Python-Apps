@@ -1,6 +1,6 @@
 30/05/2024 17:30
 ----------------------
-BUG detected: 
+BUG detected: ----------------- SOLVED 30/05/2024 17:50
 Line 39
 More than one linebreaks in text input --> /n's get replaced by ' ' --> counted in its length 
 --> word_count inaccurate 

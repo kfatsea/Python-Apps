@@ -31,7 +31,7 @@ while True:
     event, values = window.read()
     print(event, values)
 
-    if event == sg.WIN_CLOSED:
+    if event == sg.WIN_CLOSED or 'Exit':
         break
 
     if event == 'Word Count':
@@ -60,6 +60,8 @@ while True:
         window['-TEXTBOX-'].update(updated_text)
     
     # if event == 'Save':
+
+    
 
       
 

@@ -19,7 +19,7 @@ menu_layout = [
 # Create layout 
 layout = [
     [sg.Menu(menu_layout, k = '-MENU-')],
-    [sg.Text("Unsaved", k = '-DOCNAME-'), sg.Button('Popup Button')],
+    [sg.Text("Unsaved", k = '-DOCNAME-')],
     [sg.Multiline(size = (40,20), key = '-TEXTBOX-', no_scrollbar = True)]
 ]
 
@@ -61,8 +61,6 @@ while True:
         file.write_text(values['-TEXTBOX-'])
         window['-DOCNAME-'].update(file_path.split('/')[-1])
         
-
-
 
     if event in smiley_events:
         full_text =  values['-TEXTBOX-']

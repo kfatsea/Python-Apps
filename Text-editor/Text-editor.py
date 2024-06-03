@@ -56,7 +56,13 @@ while True:
             print("No file selected or operation cancelled.")
 
     if event == 'Save':
-        pass
+        file_path = sg.popup_get_file("Save as", no_window = True, save_as = True) + '.txt'
+        file = Path(file_path)
+        file.write_text(values['-TEXTBOX-'])
+        window['-DOCNAME-'].update(file_path.split('/')[-1])
+        
+
+
 
     if event in smiley_events:
         full_text =  values['-TEXTBOX-']

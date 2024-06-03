@@ -1,4 +1,5 @@
 import PySimpleGUI as sg 
+from pathlib import Path #Necessary for updating DOCNAME
 
 
 smileys = [
@@ -18,7 +19,7 @@ menu_layout = [
 # Create layout 
 layout = [
     [sg.Menu(menu_layout, k = '-MENU-')],
-    [sg.Text("Unsaved"), sg.Button('Popup Button')],
+    [sg.Text("Unsaved", k = '-DOCNAME-'), sg.Button('Popup Button')],
     [sg.Multiline(size = (40,20), key = '-TEXTBOX-', no_scrollbar = True)]
 ]
 
@@ -31,7 +32,7 @@ while True:
     event, values = window.read()
     print(event, values)
 
-    if event == sg.WIN_CLOSED or 'Exit':
+    if event in [sg.WIN_CLOSED, 'Exit']:
         break
 
     if event == 'Word Count':
@@ -47,11 +48,15 @@ while True:
         file_path = sg.popup_get_file("Text not shown", no_window = True)
         if file_path:
             print("File Selected", file_path)
-            with open(file_path, 'r') as file:
-                file_contents = file.read()
-                window['-TEXTBOX-'].update(file_contents)
+            file = Path(file_path) #Create a Path object with your file path
+            file_contents = file.read_text()
+            window['-TEXTBOX-'].update(file_contents)
+            window['-DOCNAME-'].update(file_path.split('/')[-1])
         else:
             print("No file selected or operation cancelled.")
+
+    if event == 'Save':
+        pass
 
     if event in smiley_events:
         full_text =  values['-TEXTBOX-']

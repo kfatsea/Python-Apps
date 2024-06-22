@@ -1,6 +1,13 @@
 30/05/2024 17:30
 ----------------------
-BUG detected: ----------------- SOLVED 30/05/2024 17:50
+BUG detected: -------- SOLVED 30/05/2024 17:50
 Line 39
 More than one linebreaks in text input --> /n's get replaced by ' ' --> counted in its length 
 --> word_count inaccurate 
+
+03/06/2024i 14:30
+------------------------
+BUG DETECTED ???
+Line 58
+Playing around with saving and Opening the same files saves multiple wrong ones ??
+Gotta play around more

@@ -1,24 +1,9 @@
 # Description
-- What are you building? 
-- What is your aim?
-- What are you using (language and framework)
-- References
+This project consists of a suite of simple utility applications developed using Python and PySimpleGUI. The goal is to become more comfortable with Python development while creating functional tools. This suite includes a variety of small, practical applications:
 
-## Converter
-#### Brief description
-Simple Python converter that converts:
-- kg to pounds
-- km to miles
-- sec to 
-##### Preview
-![Converter](/Media/Converter.png)
-## Calculator
-#### Brief Description
-Enter Description
-##### Preview
-![Calculator](/Media/Calculator.png)
-## Stopwatch
-#### Brief Description
-Enter Description
-##### Preview
-![Stopwatch](/Media/Stopwatch.png)
+- Connverter
+- Claculator
+- Stopwatch
+
+This project does not emphasize git proficiency. For a more comprehensive and challenging project, consider exploring the Project Euler repository, which offers complex programming problems and explores multiple languages, including Python, Java, C++, and Rust.
+
